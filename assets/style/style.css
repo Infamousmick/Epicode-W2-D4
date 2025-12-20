@@ -11,8 +11,10 @@ header {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  padding: 10px 0;
   top: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px 0;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -85,9 +87,305 @@ p.profileName {
 }
 
 div#wrapper {
-  width: 100%;
-  border: 3px solid blue;
   margin: auto;
-  margin-top: 20px;
-  padding: 40px 140px;
+  padding: 0 140px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+main {
+  margin: 60px 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#mainNav {
+  width: 94%;
+  display: flex;
+  margin-left: 25px;
+}
+
+
+
+#mainNav ul {
+  width: 100%;
+  border-bottom: 2px solid #e4e4e4
+}
+
+#mainNav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px 12px 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #7A7A7A;
+}
+
+
+#mainNav ul li:active, #mainNav ul li:focus {
+  color: #272727;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #272727;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.05;
+}
+
+.cardLeft {
+  width: 70%;
+  margin-right: 15px;
+}
+
+
+
+.cardImg {
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/infamick_profile.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+p.author {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #2A2A2A
+}
+
+.title {
+  text-overflow: wrap;
+  margin-bottom: 5px;
+  color: #2A2A2A
+}
+
+p.description {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #818181;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.centerInfo, .bottomInfo {
+  margin-left: 10px;
+}
+
+.centerInfo {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+
+
+.bottomInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottomRight {
+  display: flex;
+}
+
+.bottomLeft p {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #818181;
+  margin-right: 5px;
+  position: relative;
+}
+
+.bottomLeft p:nth-child(3) {
+  background-color: #F2F2F2;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+
+.bottomLeft p:not(:last-child):after {
+  content: '.';
+  color: #818181;
+  position: absolute;
+  bottom: 2px;
+  right: -9px;
+  font-size: 1.1em;
+}
+
+.bottomLeft p:nth-child(3):after {
+  bottom: 4px;
+}
+
+
+.cardRight {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cardRight img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.bottomRight {
+  gap: 10px;
+}
+
+.bottomRight i {
+  font-size: 0.9em;
+}
+
+.bottomRight i:first-of-type {
+  color: #3E3E3E;
+}
+
+
+aside {
+  width: 40%;
+  border-left: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#asideTop {
+  margin-top: 30px;
+  border-bottom: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.imageContainer .fa-plus {
+  font-size: 1.5em;
+  color: #969696;
+  font-weight: 500;
+}
+
+.imageContainer .fa-twitter {
+  font-size: 1.35em;
+}
+
+.discoverContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  margin-top: 0px;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+p#twitter {
+  width: 60%;
+  color: gray;
+  text-align: center;
+  text-overflow: wrap;
+}
+
+p#twitter, #twitterButton {
+  color: #2A2A2A;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+#twitterButton {
+  font-size: 0.8em;
+  padding: 6px 10px;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+}
+
+#twitterButton i {
+  font-size: 1.5em;
+  margin-right: 8px;
+}
+
+p#later {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #898989;
+  text-decoration: underline;
+}
+
+#asideRecommend {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 11%;
+  margin-top: 30px;
+}
+
+#asideTitle {
+  color: #2A2A2A;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+
+
+#recommendNav ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  margin: 5px;
 }
