@@ -58,7 +58,7 @@ a {
   color: inherit;
 }
 
-a#resumeButton {
+#resumeButton {
   /* width: 30%; */
   /* height: 60%; */
   font-size: 0.7em;
@@ -356,7 +356,7 @@ p#twitter, #twitterButton {
   margin-right: 8px;
 }
 
-p#later {
+#later {
   font-size: 0.75em;
   font-weight: 500;
   color: #898989;
@@ -530,4 +530,13 @@ p.authorRecent {
   font-size: 0.85em;
   font-weight: 500;
   color: #7A7A7A;
+}
+
+.fakeBtn {
+  transition: all 0.3s ease;
+}
+
+.fakeBtn:hover {
+  scale: 1.05;
+  background-color: rgba(109, 172, 255, 0.422);
 }
