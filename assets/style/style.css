@@ -163,11 +163,18 @@ main {
 .cardImg {
   width: 25px;
   height: 25px;
-  background-image: url('../images/infamick_profile.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   margin: 5px;
+}
+
+#img1 {
+  background-image: url('../images/infamick_profile.jpg');
+}
+
+#img2 {
+  background-image: url('../images/Joao.jpg');
 }
 
 .userInfo {
@@ -175,10 +182,17 @@ main {
   align-items: center;
 }
 
-p.author {
+p.author, span.inGray {
   font-size: 0.9em;
   font-weight: 600;
+}
+
+p.author {
   color: #2A2A2A
+}
+
+span.inGray {
+  color: #7D7D7D
 }
 
 .title {
@@ -421,7 +435,7 @@ p#twitter, #twitterButton {
 }
 
 .followCardCenter {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .asideAuthor {
