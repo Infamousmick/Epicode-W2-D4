@@ -114,9 +114,9 @@ main {
 
 
 #mainNav {
-  width: 94%;
+  width: 91%;
   display: flex;
-  margin-left: 25px;
+  margin-left: 29px;
 }
 
 
@@ -292,13 +292,15 @@ p.description {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .cardRight img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .bottomRight {
