@@ -3,13 +3,15 @@
   padding: 0;
 }
 
-a, p {
+a,
+p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "Arvo", serif;
   font-weight: 700;
 }
@@ -55,8 +57,6 @@ header {
   left: 50%; 
   transform: translate(-50%, -50%); */
 }
-
-
 
 .headerRight i {
   font-size: 1em;
@@ -111,19 +111,15 @@ main {
   flex-direction: column;
 }
 
-
-
 #mainNav {
   width: 91%;
   display: flex;
   margin-left: 29px;
 }
 
-
-
 #mainNav ul {
   width: 100%;
-  border-bottom: 2px solid #e4e4e4
+  border-bottom: 2px solid #e4e4e4;
 }
 
 #mainNav ul li {
@@ -132,11 +128,12 @@ main {
   padding: 0 20px 12px 5px;
   font-size: 0.9em;
   font-weight: 500;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
-
-#mainNav ul li:active, #mainNav ul li:focus, #mainNav ul li:hover {
+#mainNav ul li:active,
+#mainNav ul li:focus,
+#mainNav ul li:hover {
   color: #272727;
   margin-bottom: -2px;
   border-bottom: 2px solid #272727;
@@ -157,19 +154,20 @@ main {
   transition: all 0.3s linear;
 }
 
-.card:hover, .followCard:hover, #recommendNav ul li:hover, .recentCard:hover {
+.card:hover,
+.followCard:hover,
+#recommendNav ul li:hover,
+.recentCard:hover {
   cursor: pointer;
   opacity: 0.8;
   scale: 1.05;
 }
 
-
 .cardLeft {
   width: 70%;
-  margin-right: 15px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
-
-
 
 .cardImg {
   width: 25px;
@@ -181,23 +179,26 @@ main {
 }
 
 #img1 {
-  background-image: url('../images/infamick_profile.jpg');
+  background-image: url("../images/infamick_profile.jpg");
 }
 
 #img2 {
-  background-image: url('../images/Joao.jpg');
+  background-image: url("../images/Joao.jpg");
 }
 
 #img3 {
-  background-image: url('../images/Dhruv.jpg');
+  background-image: url("../images/Dhruv.jpg");
 }
 
 #img4 {
-  background-image: url('../images/Cantisano.jpg');
+  background-image: url("../images/Cantisano.jpg");
 }
 
-#img5, #img6, #img7, #img8 {
-  background-image: url('../images/Patrick.jpg');
+#img5,
+#img6,
+#img7,
+#img8 {
+  background-image: url("../images/Patrick.jpg");
 }
 
 .userInfo {
@@ -205,23 +206,24 @@ main {
   align-items: center;
 }
 
-p.author, span.inGray {
+p.author,
+span.inGray {
   font-size: 0.9em;
   font-weight: 600;
 }
 
 p.author {
-  color: #2A2A2A
+  color: #2a2a2a;
 }
 
 span.inGray {
-  color: #7D7D7D
+  color: #7d7d7d;
 }
 
 .title {
   text-overflow: wrap;
   margin-bottom: 5px;
-  color: #2A2A2A
+  color: #2a2a2a;
 }
 
 p.description {
@@ -233,7 +235,8 @@ p.description {
   text-overflow: ellipsis;
 }
 
-.centerInfo, .bottomInfo {
+.centerInfo,
+.bottomInfo {
   margin-left: 10px;
 }
 
@@ -241,8 +244,6 @@ p.description {
   margin-top: 6px;
   margin-bottom: 10px;
 }
-
-
 
 .bottomInfo {
   display: flex;
@@ -268,13 +269,13 @@ p.description {
 }
 
 .bottomLeft p:nth-child(3) {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 2px 4px;
   border-radius: 10px;
 }
 
 .bottomLeft p:not(:last-child):after {
-  content: '.';
+  content: ".";
   color: #818181;
   position: absolute;
   bottom: 2px;
@@ -286,13 +287,12 @@ p.description {
   bottom: 4px;
 }
 
-
 .cardRight {
   width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-sart;
 }
 
 .cardRight img {
@@ -301,6 +301,7 @@ p.description {
   max-width: 150px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 .bottomRight {
@@ -312,9 +313,8 @@ p.description {
 }
 
 .bottomRight i:first-of-type {
-  color: #3E3E3E;
+  color: #3e3e3e;
 }
-
 
 aside {
   width: 40%;
@@ -356,7 +356,7 @@ aside {
 }
 
 .fa-twitter {
-  color: #37A2F4;
+  color: #37a2f4;
 }
 
 .discoverContainer {
@@ -378,13 +378,15 @@ p#twitter {
   text-overflow: wrap;
 }
 
-p#twitter, #twitterButton {
-  color: #2A2A2A;
+p#twitter,
+#twitterButton {
+  color: #2a2a2a;
   font-size: 0.9em;
   font-weight: 500;
 }
 
-#twitterButton, .followButton {
+#twitterButton,
+.followButton {
   font-size: 0.8em;
   padding: 6px 10px;
   color: rgb(65, 65, 65);
@@ -393,7 +395,6 @@ p#twitter, #twitterButton {
   display: flex;
   align-items: center;
 }
-
 
 #twitterButton i {
   font-size: 1.5em;
@@ -416,18 +417,16 @@ p#twitter, #twitterButton {
 }
 
 .asideTitle {
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-size: 0.95em;
   margin-bottom: 10px;
 }
-
-
 
 #recommendNav ul li {
   list-style: none;
   display: inline-block;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 8px 18px;
   border-radius: 16px;
   font-size: 0.85em;
@@ -477,7 +476,7 @@ p#twitter, #twitterButton {
 
 .asideDescription {
   font-size: 0.75em;
-  color: #7A7A7A;
+  color: #7a7a7a;
   margin-top: 4px;
 }
 
@@ -520,13 +519,13 @@ p#twitter, #twitterButton {
 p.authorRecent {
   font-size: 0.8em;
   font-weight: 600;
-  color: #2A2A2A
+  color: #2a2a2a;
 }
 
 .titleRecent {
   font-size: 1.1em;
   font-weight: 600;
-  color: #2A2A2A
+  color: #2a2a2a;
 }
 
 .bottomInfoRecent {
@@ -543,7 +542,7 @@ p.authorRecent {
 }
 
 .bottomInfoRecent p:first-child:after {
-  content: '.';
+  content: ".";
   color: #818181;
   position: absolute;
   bottom: 2px;
@@ -552,7 +551,7 @@ p.authorRecent {
 }
 
 .bottomInfoRecent p:after {
-  content: '\22C6';
+  content: "\22C6";
   color: #818181;
   position: absolute;
   bottom: -4px;
@@ -580,7 +579,7 @@ p.authorRecent {
   padding: 0 20px 12px 5px;
   font-size: 0.85em;
   font-weight: 500;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 .fakeBtn {
