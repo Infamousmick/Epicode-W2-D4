@@ -1,7 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+a, p {
   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 header {
@@ -177,6 +183,18 @@ main {
   background-image: url('../images/Joao.jpg');
 }
 
+#img3 {
+  background-image: url('../images/Dhruv.jpg');
+}
+
+#img4 {
+  background-image: url('../images/Cantisano.jpg');
+}
+
+#img5, #img6, #img7, #img8 {
+  background-image: url('../images/Patrick.jpg');
+}
+
 .userInfo {
   display: flex;
   align-items: center;
@@ -330,6 +348,10 @@ aside {
   font-size: 1.35em;
 }
 
+.fa-twitter {
+  color: #37A2F4;
+}
+
 .discoverContainer {
   width: 90%;
   display: flex;
@@ -364,6 +386,7 @@ p#twitter, #twitterButton {
   display: flex;
   align-items: center;
 }
+
 
 #twitterButton i {
   font-size: 1.5em;
@@ -415,7 +438,7 @@ p#twitter, #twitterButton {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   opacity: 1;
   transition: all 0.3s linear;
 }
@@ -436,6 +459,7 @@ p#twitter, #twitterButton {
 
 .followCardCenter {
   margin-right: 50px;
+  flex: 1;
 }
 
 .asideAuthor {
