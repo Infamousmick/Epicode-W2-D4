@@ -4,10 +4,14 @@
 }
 
 a, p {
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+}
+
+h2, h3 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
 }
 
 header {
@@ -132,7 +136,7 @@ main {
 }
 
 
-#mainNav ul li:active, #mainNav ul li:focus {
+#mainNav ul li:active, #mainNav ul li:focus, #mainNav ul li:hover {
   color: #272727;
   margin-bottom: -2px;
   border-bottom: 2px solid #272727;
@@ -153,11 +157,12 @@ main {
   transition: all 0.3s linear;
 }
 
-.card:hover, .followCard:hover {
+.card:hover, .followCard:hover, #recommendNav ul li:hover, .recentCard:hover {
   cursor: pointer;
   opacity: 0.8;
   scale: 1.05;
 }
+
 
 .cardLeft {
   width: 70%;
@@ -425,6 +430,8 @@ p#twitter, #twitterButton {
   border-radius: 16px;
   font-size: 0.85em;
   margin: 5px;
+  opacity: 1;
+  transition: all 0.3s linear;
 }
 
 #asideFollow {
@@ -484,6 +491,8 @@ p#twitter, #twitterButton {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  opacity: 1;
+  transition: all 0.3s linear;
 }
 
 .userInfoRecent {
